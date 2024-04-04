@@ -6,7 +6,7 @@
             :key="contact._id"
             :class="{ active: index === activeIndex }"
             @click="updateActiveIndex(index)"
-        >
+        > 
             {{ contact.name }}
         </li>
     </ul>
