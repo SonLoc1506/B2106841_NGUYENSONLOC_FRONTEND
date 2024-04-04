@@ -1,4 +1,4 @@
-<template>
+<template> 
   <Form @submit="submitContact" :validation-schema="contactFormSchema">
       <div class="form-group">
           <label for="name">Tên</label>
