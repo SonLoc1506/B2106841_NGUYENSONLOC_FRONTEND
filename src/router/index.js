@@ -4,7 +4,7 @@ const routes = [
     {
         path: "/",
         name: "contactbook",
-        component: ContactBook,
+        component: () => import("@/views/ContactBook.vue"),
     },
     {
         path: "/:pathMatch(.*)*",
@@ -19,7 +19,7 @@ const routes = [
     },
     {
         path: "/contacts-create",
-        name: "contact.create",
+        name: "contact.add",
         component: () => import("@/views/ContactAdd.vue"),
         props: true
     }

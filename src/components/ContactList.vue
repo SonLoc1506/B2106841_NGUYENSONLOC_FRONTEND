@@ -1,18 +1,3 @@
-<script>
-export default {
-    props: {
-        contacts: { type: Array, default: [] },
-        activeIndex: { type: Number, default: -1 },
-    },
-    emits: ["update:activeIndex"],
-    methods: {
-        updateActiveIndex(index) {
-            this.$emit("update:activeIndex", index);
-        }
-    }
-};
-</script>
-
 <template>
     <ul class="list-group">
         <li
@@ -27,3 +12,17 @@ export default {
     </ul>
 </template>
 
+<script>
+export default {
+    props: {
+        contacts: { type: Array, default: [] },
+        activeIndex: { type: Number, default: -1 },
+    },
+    emits: ["update:activeIndex"],
+    methods: {
+        updateActiveIndex(index) {
+            this.$emit("update:activeIndex", index);
+        }
+    }
+};
+</script>
